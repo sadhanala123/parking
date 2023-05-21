@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+
+
+	<title>Category </title>
+	<style>
+		:root{
+	--main-color: #282828;
+	--second-color: blue;
+	--black: #000;
+	--white: ECE8DD;
+}
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Josefin Sans', sans-serif;
+}
+body{
+	background: var(--white);
+	height: 100vh;
+}
+.clearfix{
+	clear: both;
+}
+.left-div{
+	float:left;
+	height:80vh;
+	width:20%;
+	background-color:var(--main-color)
+
+}
+
+.logo{
+	text-align: center;
+	color: white;
+	font-weight: bold;
+}
+.hr{
+	border: none;
+    height: 1px;
+    background: #ddd3;
+    margin-top: 10px;
+    margin-bottom:10px;
+}
+.nav1 li{
+	list-style: none;
+	padding: 13px 10px;
+}
+.nav1 li a{
+	text-decoration: none;
+	color: white;
+}
+.nav li a i{
+    padding-left: 10px;
+    vertical-align: bottom;
+    width: 23px;
+}
+.active{
+	background:var(--second-color);
+}
+
+.nav > .active::before, .nav > .active::after {
+     content: "";
+     position: absolute;
+}
+.nav > li{
+    padding-left: 25px;
+    margin-left: -16px;
+}
+.nav > .active::before {
+         top: -80px;
+    right: -24px;
+    height: 80px;
+    width: 40px;
+}
+.nav > .active::after {
+    top: 49px;
+    right: -24px;
+    height: 80px;
+    width: 38px;
+}
+.active a{
+	color: var(White)!important;
+}
+
+.head{
+    margin-bottom:20px;
+    padding:20px;
+    background-color:#282828;
+
+}
+.profile{
+	display:flex;
+	float: right;
+	margin-top: -20px;
+
+}
+
+.profile p{
+	color: white;
+    font-weight: 500;
+    font-size: 13.5px;
+    display:flex;
+    cursor: pointer;
+}
+.profile-div{
+  background-color: white;
+  width: 140px;
+  border: 1px solid #ddd;
+  padding: 10px 0px;
+  right: 6%;
+  border-radius: 5px;
+  position: absolute;
+  z-index: 9;
+  display: none;
+
+}
+.profile-div:after{
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    top: -6px;
+    border-left: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    right: 10%;
+}
+.profile-div p{
+  margin: 0px;
+    padding: 10px 20px;
+}
+.profile-div p:hover{
+  margin: 0px;
+    padding: 10px 20px;
+    background-color: blue;
+    border-radius: 0px;
+    color: white;
+}
+.vehicle_Heading{
+    border-bottom: 1px solid #ddd;
+    padding:5px;
+}
+th, td {
+    padding: 2px;
+    text-align: left;
+}
+tr {
+    border-bottom: 1px solid #ddd;
+}
+		.details{
+			border:1px solid #ddd;
+			padding:20px;
+			margin:10px;
+			width:300px;
+		}
+		table {
+			border-collapse: collapse;
+			width: 100%;
+			border-spacing:0;
+		}
+		th, td {
+			padding: 5px;
+			text-align: left;
+		}
+		tr {
+			border-bottom: 1px solid #ddd;
+		}
+		.block2{
+			padding:20px;
+			margin:10px;
+			width:90%;
+			height:100%;
+			margin-left:15px;
+			float:right;
+		}
+		.container{
+		font: size 15px;
+		}
+		.btn
+		{
+<!--		width:10%;-->
+<!--		height:5%;-->
+<!--		padding:10px;-->
+<!--		background-color:white;-->
+<!--		color:black;-->
+		}
+      </style>
+</head>
+<body>
+<div class="left-div">
+	<br>
+	<h2 class="logo" style="font-size:15px"><span style="font-weight: 100; color:blue; "><i class="fa fa-car" class="icon"></i>S</span>PMS Panel</h2>
+	<hr class="hr" />
+	<ul class="nav1">
+		<li class="active"><a href="{% url 'dashboard' %}"><i class="fa fa-tachometer"></i>Dashboard</a></li>
+		<li><a href="{% url 'category' %}"><i class="fa fa-list-alt"></i> Category</a></li>
+		<li><a href="{% url 'vehicleentry' %}"><i class="fa fa-car"></i> Vehicle Entry</a></li>
+		<li><a href="{% url 'managevehicle' %}"><i class="fa fa-th-list"></i>Manage Vehicle</a></li>
+		<li><a href=""><i class="fa fa-line-chart"></i>Reports</a></li>
+		<li><a href="{% url 'search' %}"><i class="fa fa-search"></i>Search</a></li>
+		<li><a href="{% url 'accountsettings' %}"><i class="fa fa-gear"></i>Account Settings</a></li>
+		<li><a href="{% url 'login' %}"><i class="fa fa-power-off"></i> Logout</a></li>
+	</ul>
+	<br><br>
+</div>
+		<div class="head">
+			<div class="col-div-6">
+				<p class="nav"></p>
+			</div>
+
+				<div class="profile">
+					<p><a href="{% url 'login' %}" class="btn btn-primary"><i class="fa fa-power-off"></i> Log Out</a></p>
+				</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6 m-2">
+				<p class="vehicle_Heading"><i class="fa fa-th-list"></i>Add category</p>
+				<form action="#" method="post" enctype="multipart/form-data">
+					{% csrf_token %}
+					{{ form.as_p }}
+					<input type="submit" value="Submit" class="btn btn-primary col-md-12">
+				</form>
+
+			</div>
+			<div class="col-md-4 m-2">
+			<div class="details">
+				<p class="vehicle_Heading"><i class="fa fa-info"></i>Details</p>
+
+				<table>
+
+					<tr>
+						<td>car</td>
+						<td>$ 4.00</td>
+					</tr>
+					<tr>
+						<td>motor cycle</td>
+						<td>$ 2.00</td>
+					</tr>
+					<tr>
+						<td> Mini Van</td>
+						<td>$ 5.00</td>
+					</tr>
+					<tr>
+						<td>Picup Van</td>
+						<td>$ 4.00</td>
+					</tr>
+					<tr>
+						<td>MiniBus</td>
+						<td>$ 6.00</td>
+					</tr>
+					<tr>
+						<td>Car Type 101</td>
+						<td>$ 7.00</td>
+					</tr>
+
+				</table>
+			</div>
+			</div>
+		</div>
+		<div class="block2">
+			<table class="block2_table">
+				<p class="vehicle_Heading"><i class="fa fa-th-list"></i>Manage category</p>
+				<tr>
+					<th>#</th>
+					<th>Area Number</th>
+					<th>VehicleType</th>
+					<th>VehicleLimit</th>
+					<th>Charge</th>
+					<th>Status</th>
+					<th>Action</th>
+				</tr>
+				{% block content %}
+				{% if display %}
+
+				{% for category in display %}
+				<tr>
+					<td>{{category.id}}</td>
+					<td>{{category.parking_area_no}}</td>
+					<td>{{category.vehicle_type}}</td>
+					<td>{{category.vehicle_limit}}</td>
+					<td>{{category.parking_charge}}</td>
+					{% if category.status %}
+					<td><a href="#" class="btn btn-danger">Deactivate</a></td>
+					<td><a href="{% url 'deactive' category.pk %}" class="btn btn-success">Activate</a></td>
+					{% else %}
+					<td><a href="#" class="btn btn-success">Activate</a></td>
+					<td>
+						<a href="{% url 'activated' category.pk %}" class="btn btn-danger">Deactivate</a>
+						<a href="{% url 'update' category.pk %}" class="btn btn-info"><i class="fa fa-pencil-square" style="color: white;"></i></a>
+						<a href="{% url 'delete' category.id %}" class="btn btn-danger"><i class="fa fa-trash"></i></a>
+					</td>
+					{% endif %}
+				</tr>
+				{% endfor %}
+				{% else %}
+				<p>---No Vehicles---</p>
+				{% endif %}
+			</table>
+
+			<p >Showing 1 to 1 of entries</p>
+			<div class="row">
+
+				<div class="col-md-12 d-flex justify-content-end">
+					{% if display.has_other_pages %}
+					<ul class="pagination">
+						<!---here we  are creating previous button navigation starts here--->
+						{% if display.has_previous %}
+						<li class="page-item">
+							<a href="?page={{ display.previous_page_number }}" class="page-link">Previous</a>
+						</li>
+						{% else %}
+						<li class="page-item disabled">
+							<a href="?page=1" class="page-link">Previous</a>
+						</li>
+						{% endif %}
+
+						{% for i in display.paginator.page_range %}
+						{% if category.number == i %}
+						<li class="page-item active">
+							<a href="?page={{ i }}" class="page-link">{{ i }}</a>
+						</li>
+						{% else %}
+						<li class="page-item">
+							<a href="?page={{ i }}" class="page-link">{{ i }}</a>
+						</li>
+						{% endif %}
+						{% endfor %}
+
+						{% if category.has_next %}
+						<li class="page-item">
+							<a href="?page={{ display.next_page_number }}" class="page-link">Next</a>
+						</li>
+						{% else %}
+						<li class="page-item disable">
+							<a href="?page={{ display.paginator.number.pages}}" class="page-link">Next</a>
+						</li>
+						{% endif %}
+					</ul>
+					{% endif %}
+				</div>
+			</div>
+			{% endblock %}
+		</div>
+	</div>
+</div>
+</body>
+</html>
